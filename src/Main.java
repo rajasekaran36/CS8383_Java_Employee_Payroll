@@ -18,9 +18,10 @@ public class Main {
 		String choice;
 		int n_choice = 0;
 		Scanner userInput = new Scanner("System.in");
-		System.out.println("Employee Payroll System");
-		System.out.println("***********************\n");
+		
 		while(n_choice != 5){
+			System.out.println("\n\nEmployee Payroll System");
+			System.out.println("***********************\n");
 			System.out.println("1. Programmer\n2. Assistant Professor\n"
 							 + "3. Associate Professor\n4. Professor\n"
 							 + "5. Exit\n\nEnter Your Choice");
@@ -43,6 +44,8 @@ public class Main {
 				System.out.println("Professor Selected");
 				aProfessor = new Professor();
 			case 5:
+				System.out.println("Thank You !!!");
+				userInput.close();
 				break;
 			default:
 				System.out.println("Enter valid choice !!!");
