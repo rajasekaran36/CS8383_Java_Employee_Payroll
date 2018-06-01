@@ -76,8 +76,8 @@ class Employee {
 		this.no_of_days_worked = input.nextInt();
 		if (no_of_days_worked <= no_of_days_in_current_month) {
 			this.current_basic_pay = this.per_day_pay * no_of_days_worked;
-			System.out.println("Programmer");
-			System.out.println("----------");
+			System.out.println("Pay Slip");
+			System.out.println("--------");
 			generatePaySlip();
 		} else {
 			System.out.println("Sorry Please Enter Valid Days");
